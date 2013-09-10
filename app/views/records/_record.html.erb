@@ -1,0 +1,14 @@
+<tr id=<%= "record_#{record.id}" %>>
+    <td><%= link_to record.id, edit_record_path(record), :remote => true %></td>
+    <td><%= record.date %></td>
+    <td><%= record.time %></td>
+    <td><%= record.amount %></td>
+    <td><%= record.provenance %></td>
+    <td><%= record.destination %></td>
+    <td><%= record.center.name %></td>
+    <td><%= record.vehicle.plate  %></td>
+    <td>
+        <%= link_to  image_tag('mostrar.png'), record, :remote => true, :class => 'btn btn-mini' %>
+        <%= link_to image_tag('editar1.png', :title => "Editar Equipos"), edit_record_path(record),  :remote => true, :class => 'btn btn-mini'%>
+    </td>
+</tr>

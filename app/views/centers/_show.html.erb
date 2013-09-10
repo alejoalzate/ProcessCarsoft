@@ -1,0 +1,25 @@
+<%- model_class = Center -%>
+	<div class="page-header">
+  		<h1>Centros</h1>
+		<table class="table table-bordered table-hover" >
+	    	<caption>
+	    		<h3>Informacion</h3>
+	    	</caption>
+	    	<thead>
+	    		<tr class="success">
+	    			<th>Id</th>
+	    			<th>Nombres</th>
+	    			<th>Codigos</th>
+	    			<th>Area Centro</th>
+	    		</tr>
+	    	</thead>
+	    	<tbody>
+	    		<tr class="success">
+				    <td><p><%= @center.id %></p></td>
+				    <td><p><%= @center.name %></p></td>
+				    <td><p><%= @center.code %></p></td>	
+				      
+	    		</tr>
+	    	</tbody>
+	    </table>
+	</div>

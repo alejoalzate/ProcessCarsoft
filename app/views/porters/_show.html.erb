@@ -1,0 +1,30 @@
+<%- model_class = Porter-%>
+	<div class="page-header">
+  		<h1>Porteros</h1>
+		<table class="table table-bordered table-hover" >
+	    	<caption>
+	    		<h3>Informacion</h3>
+	    	</caption>
+	    	<thead>
+	    		<tr class="success">
+	    			<th>Id</th>
+	    			<th>Nombres</th>
+	    			<th>Apellidos</th>
+	    			<th>Direccion</th>
+	    			<th>Telefono</th>
+	    			<th>Turno</th>
+	    		</tr>
+	    	</thead>
+	    	<tbody>
+	    		<tr class="success">
+     			    <td><p><%= image_tag @porter.avatar.url(:thumb) %></p></td>
+				    <td><p><%= @porter.id %></p></td>
+				    <td><p><%= @porter.name %></p></td>
+				    <td><p><%= @porter.surname  %></p></td>
+				    <td><p><%= @porter.address %></p></td>
+				    <td><p><%= @porter.phone  %></p></td>	
+				   	<td><p><%= @porter.turn_id %></p></td>  
+	    		</tr>
+	    	</tbody>
+	    </table>
+	</div>

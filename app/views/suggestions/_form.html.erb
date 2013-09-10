@@ -1,0 +1,19 @@
+<%= simple_form_for(@suggestion, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+    <%= f.error_notification %>
+    <%= display_base_errors @suggestion%>
+      <p></p><h4>Sugerencias</h4></p>
+      <p><%= f.input :name, :label => "Nombre",  :required => true %></p>
+      <p><%= f.input :surname, :label => "Apellido",  :required => true %></p>
+      <p><%= f.label :document_id, :label => "Documento",  :required => true %>
+       <%= f.collection_select :document_id , Document.all, :id, :name, :prompt => "Tipo Documentos"  %></p>
+      <p><%= f.input :number_identification, :label => "Numero Identidad",  :required => true %>
+      <p><%= f.input :phone, :label => "Telefono",  :required => true %></p>
+      <p><%= f.input :movil, :label => "Celular",  :required => true %></p>
+      
+      <p><%= f.label :suggestion, :label => "Sugerencia",  :required => true %>
+       <%= f.text_area :suggestion, :rows => 3 %></p>
+    <div class="form-actions">
+      <%= f.submit "guardar", :class => 'btn btn-primary' %>
+      <a href="#" class="btn" onclick="$.lazybox.close()">Cerrar</a>
+    </div>
+<% end %>

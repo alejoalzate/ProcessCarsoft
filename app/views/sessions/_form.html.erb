@@ -1,0 +1,30 @@
+<%= form_tag sessions_path, :method => :post, :class => "form-horizontal" do %>
+
+    <div class="well">
+
+        <div class="control-group">
+        	<label class="control-label" for="inputEmail">Correo Electrónico</label>
+			<div class="controls">
+			     <%= text_field_tag :email %>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<label class="control-label" for="inputEmail">Contraseña</label>
+			<div class="controls">
+				 <%= password_field_tag :password %>
+			</div>
+		</div>
+
+		<div class="control-group">
+			<div class="controls">
+			    <%= submit_tag "Ingresar", :class => 'btn btn-success' %>
+	            <%= link_to 'Inicio', root_path, :class => 'btn' %>
+	        </div>
+		</div>
+
+	</div>
+
+
+
+<% end %>

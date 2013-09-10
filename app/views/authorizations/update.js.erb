@@ -1,0 +1,2 @@
+$('tr#authorization_<%= @authorization.id %>').replaceWith("<%= escape_javascript(render @authorization) %>")
+$.lazybox.close()

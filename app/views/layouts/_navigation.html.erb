@@ -1,0 +1,131 @@
+<script>
+function myFunction()
+{
+alert("Hasta luego, amigo");
+}
+</script>
+
+<ul class="nav">
+  <% if current_user %>
+
+      <% if  can? :update, pages_admin_path %>
+      <nav id="colorNav" >
+    <% if current_user %>
+            <ul>
+                <li class="admin">
+                    <a href="../pages/admin" class="icon-home"><center></center></a>
+                    <ul>
+                        <li><%= link_to "usuarios", users_path %>
+                        </li>
+                        <li><%= link_to "Responsables", responsibles_path %>
+                        </li>
+                        <li><%= link_to "Roles", roles_path %>
+                        </li>
+                        <li><%= link_to "Rhs", rhs_path %>
+                        </li>
+                        <li><%= link_to "Documentos", documents_path %>
+                        </li>
+                        <li><%= link_to "Sugerencias", suggestions_path %>
+                        </li>
+                        <li><%= link_to "Areas", areas_path %>
+                        </li>
+                        <li><%= link_to "Registros", records_path %>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="new">
+                    <a href="../pages/admin2" class="icon-home"><center></center></a>
+                    <ul>
+                        <li><%= link_to "Autorizaciones", authorizations_path %>
+                        </li>
+                        <li><%= link_to "Estacionamientos", parkings_path %>
+                        </li>
+                        <li><%= link_to "Turnos", turns_path %>
+                        </li>
+                        <li><%= link_to "Porteros", porters_path %>
+                        </li>
+                        <li><%= link_to "Tipos Materiales", type_materials_path %>
+                        </li>
+                        <li><%= link_to "Tipos Usuarios", type_users_path %>
+                        </li>
+                        <li><%= link_to "Tipos Vehiculos", type_vehicles_path %>
+                        </li>
+                        <li><%= link_to "Usabilidades", usabilities_path %>
+                        </li>
+                        <li><%= link_to "Destinos", destinations_path %>
+                        </li>
+                    </ul>
+                </li>
+          
+                   <li class="suggestion"><%= link_to('', new_user_path, :class => "icon-user", :remote => true  ) %></li>
+                </li>
+                  
+                  <li class="show"><%= link_to '', admin3_path, :class => "icon-list" %>
+                </li>
+                  
+
+                <!--<li><%= link_to image_tag('New2.png', :title => "Editar Equipos"), new_user_path,  :remote => true, :class => "UserNew" %></li>
+                <li class="show">
+                    <a href="#" class="icon-umbrella"></a>
+                    <ul>
+                        <li><a href="transitos">Oficinas de Transito</a></li>
+                        <li><a href="aseguradoras">Aseguradoras</a></li>
+                    </ul>
+                </li>-->
+
+            </ul>
+          </nav>
+      <% end %>
+      <% end %>
+            <li class="user">Sesión Iniciada como: <%= truncate "#{current_user.name }" %></li>
+
+   <% else %>
+      
+<li><%= link_to "Ingresar", :login %></li>
+      <li><%= link_to('Sugerencias', new_suggestion_path,  :remote => true) %></li>
+   <% end %>
+</ul>
+
+
+
+
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+        <script>
+            function openDialog() {
+                Avgrund.show( "#default-popup" );
+            }
+            function closeDialog() {
+                Avgrund.hide();
+            }
+        </script>
+
+    </head>
+    
+    <body>
+
+        <aside id="default-popup" class="avgrund-popup">
+            <h2>Muchas gracias, por usar process carsoft</h2>
+            <p>
+                Se trata de una herramienta que busca facilitar en gran medida los procesos de seguridad dentro de la institucion.
+            </p>
+            <ul onclick="javascript:closeDialog();"><%= link_to image_tag('logout.png'), :logout %></ul>
+        </aside>
+    <% if current_user %>
+
+        <article class="avgrund-contents">
+            <button onclick="javascript:openDialog();">Cerrar Sesión</button>
+        </article>
+    <% end %>
+
+        <div class="avgrund-cover"></div>
+
+        <script type="text/javascript" src="js/avgrund.js"></script>
+
+    
+
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+    </body>
+</html>

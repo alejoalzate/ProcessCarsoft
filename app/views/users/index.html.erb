@@ -1,0 +1,62 @@
+<div  id='admin2'><%= link_to image_tag("admi.png "), "pages/admin", :rel => "tooltip", :title => "Regresar Pagina Administración1"  %></div>
+
+<h1 class="fondo">Usuarios</h1><br>
+
+  <div id='admin1' class="page-header">
+    
+    <div id="buscar">
+    <%= form_tag users_path, :class => "well form-search", :method => 'get' do %>
+      <p>
+        <b>Buscar</b>
+        <%= text_field_tag :search, params[:search], :class=>"input-medium search-query span4",  
+                           :placeholder => "Nombre Usuarios" %>
+        <%= submit_tag "Buscar", :name => nil, :class => 'btn btn-success' %>
+      </p>
+    <% end %>
+</div>
+  <div id="pdf"><%= link_to  image_tag('pdf.png'), users_path(:format => :pdf), :class => 'btn btn-mini', :rel => "tooltip", :title => "Imprimir Registreos" %>
+  </div >
+  </div>
+
+    <table class="table table-hover"  >
+      <thead>
+        <tr >
+          <th class="fondo">id</th>
+          <th class="fondo">Nombre</th>
+          <th class="fondo">Identificacion</th>
+          <th class="fondo">Direccion</th>
+          <th class="fondo">Telefono</th>
+          <th class="fondo">Celular</th>
+          <th class="fondo"></th>
+          <th class="fondo"></th>
+          <th class="fondo">Acciones</th>      
+        </tr>
+
+      </thead>
+      <tbody>
+       <%= render @users %>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td><%= link_to image_tag('nuevo.png', :tile  => "Mostrar Equipos"),  new_user_path,  :remote => true %></td>
+        </tr>
+      </tfoot>
+      <tfoot>
+          <tr>
+              <td><b >Total Usuarios:</b></td>
+            <td>
+                <input type="text"  id="totalregs" class="span1" value="<%= @users.total_entries %>" readonly />
+            </td>
+          </tr>
+      </tfoot>
+    </table>
+  
+      <div align="center">
+        <div id="pagination" class="pagination">
+          </ul>
+              <%= will_paginate @users, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente&raquo;' %>
+          </ul>
+        </div>
+      </div>
+
+

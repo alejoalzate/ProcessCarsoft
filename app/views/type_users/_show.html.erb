@@ -1,0 +1,39 @@
+
+<div class="responsive">
+
+    <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="$.lazybox.close()">&times;</button>
+         <h3>Datos</h3>
+    </div>
+
+    <div class="modal-body">
+     
+        <p id="notice"><%= notice %></p>
+
+        <table class="table table-hover">
+            <tr>
+               <td><b class="pull-right">Nombre: </b></td>
+               <td><%= @type_user.id %></td>
+            </tr>
+            <tr>
+               <td><b class="pull-right">Identificacion: </b></td>
+               <td><%=  @type_user.name %></td>
+            </tr>
+            <tr>
+               <td><b class="pull-right">Direccion: </b></td>
+               <td><%= @type_user.acronym %></td>
+            </tr>
+            <tr>
+               <td><b class="pull-right">Telefono: </b></td>
+               <td><%= @type_user.description %></td>
+            </tr>
+            
+        </table>
+
+        <div class="modal-footer">
+            <a href="#" class="btn" onclick="$.lazybox.close()">Cerrar</a>
+        </div>
+
+    </div>
+    
+</div>

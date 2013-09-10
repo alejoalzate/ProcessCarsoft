@@ -1,0 +1,52 @@
+<%= javascript_include_tag "fecha" %>
+
+
+<%= simple_form_for(@record, :html => { :multipart => true, :remote => true } ) do |f| %>
+
+    
+    <%= f.error_notification %>
+    <%= display_base_errors @record %>
+
+    <div class="modal-body">
+    
+    <div class="span6"><div class="input-append date">
+            <%= f.label :date, :label => "Fecha",  :required => true %>
+                <%= f.input :date, :as => :string, :label => false, :input_html => {  :class=>"datepicker"  }  %>
+            </div>
+          </div>
+        </div>
+
+    <p><%= f.input :time, :label => "	Hora",  :required => true  %></p>
+    <p><%= f.input :amount, :label => "Cantidad",  :required => true  %></p>
+    <p><%= f.input :movements, :label => "Movimiento",  :required => true  %></p>
+    <p><%= f.input :destination, :label => "Destino",  :required => true  %></p>
+    <p><%= f.input :provenance, :label => "Procedencia",  :required => true  %></p>
+    
+    <p><%= f.label :center_id, :label => "Centro",  :required => true   %>
+    	<%= f.collection_select :center_id, Center.all, :id, :name %></p>
+    	
+    	 <p><%= f.label :vehicle_id, :label => "Vehiculo",  :required => true   %>
+    	<%= f.collection_select :vehicle_id, Vehicle.all, :id, :plate %></p>
+    	
+    	 <p><%= f.label :porter_id, :label => "Portero",  :required => true   %>
+    	<%= f.collection_select :porter_id,  Porter.all, :id, :name %></p>
+    	
+    	<p><%= f.label :material_id, :label => "Material",  :required => true   %>
+    	<%= f.collection_select :material_id, Material.all, :id, :name %></p>
+    	
+    	 <p><%= f.label :user_id , :label => "Usuario",  :required => true   %>
+    	<%= f.collection_select :user_id, User.all, :id, :name %></p>
+    	
+    	 <p><%= f.label :team_id, :label => "Equipo",  :required => true   %>
+    	<%= f.collection_select :team_id,  Team.all, :id, :name %></p>
+    	
+  
+  
+    <div class="form-actions">
+      <%= f.submit "guardar", :class => 'btn btn-primary' %>
+      <a href="#" class="btn" onclick="$.lazybox.close()">Cerrar</a>
+    </div>
+<% end %>
+
+
+

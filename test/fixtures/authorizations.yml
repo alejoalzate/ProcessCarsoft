@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  surname: MyString
+  genre: false
+  document: 
+  identification: MyString
+  item_description: MyText
+  charge: MyString
+  phone: MyString
+  avatar: MyString
+  repair: false
+  sample_property: false
+  loan: false
+  seminar: false
+  course_elements: MyString
+  others: false
+  date: 2013-05-28
+  acceptance: false
+  user: 
+
+two:
+  name: MyString
+  surname: MyString
+  genre: false
+  document: 
+  identification: MyString
+  item_description: MyText
+  charge: MyString
+  phone: MyString
+  avatar: MyString
+  repair: false
+  sample_property: false
+  loan: false
+  seminar: false
+  course_elements: MyString
+  others: false
+  date: 2013-05-28
+  acceptance: false
+  user: 

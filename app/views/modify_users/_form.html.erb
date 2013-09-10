@@ -1,0 +1,14 @@
+<%= simple_form_for([@user, @modify_user], :html => { :class => 'form-horizontal' },
+ :remote => true) do |f| %>
+
+    <%= f.error_notification %>
+    <%= display_base_errors @modify_user %>
+
+    <p><%= f.input :change, :label => "Cambiar",  :required => true  %></p>
+    <p><%= f.input :description, :label => "Descripcion",  :required => true  %></p>
+    
+    <div class="form-actions">
+      <%= f.submit "guardar", :class => 'btn btn-primary' %>
+       <a href="#" class="btn" onclick="$.lazybox.close()">Cerrar</a>
+    </div>
+<% end %>

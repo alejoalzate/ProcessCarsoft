@@ -1,0 +1,889 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_jquery-ui
+ *= require_tree .
+ *= require lazybox
+ */
+
+
+body{
+font: normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #333333;
+background: #dddddd url('Principal.jpg') repeat fixed top center;
+/*background: #dddddd url(http://2.bp.blogspot.com/-fB6l69XEZnQ/UKpngjRn4TI/AAAAAAAAAYY/9j3SJpjWBFU/s0/fondo.jpg) no-repeat fixed top left;*/
+}
+
+
+#lazybox div.team{ max-width: 500px; }
+
+.lazybox {
+  background: transparent !important;
+}
+
+#lazybox_close.img {
+  background: url('close.png') no-repeat;
+  width: 30px;
+  height: 30px;
+  top: -22px;
+  right: -17px;
+}
+
+#lazybox.sticker {
+  -webkit-border-bottom-left-radius: 20px 500px;
+  -webkit-border-bottom-right-radius: 500px 30px;
+  -webkit-border-top-right-radius: 5px 100px;
+  -moz-border-radius-bottomleft: 20px 500px;
+  -moz-border-radius-bottomright: 500px 30px;
+  -moz-border-radius-topright: 5px 100px;
+  border-radius-bottomleft: 20px 500px;
+  border-radius-bottomright: 500px 30px;
+  border-radius-topright: 5px 100px;
+  border-bottom-left-radius: 20px 500px;
+  border-bottom-right-radius: 500px 30px;
+  border-top-right-radius: 5px 100px;
+}
+
+#lazybox.top {
+  border-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+}
+
+#lazybox.player {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+h1,h3,h4{
+  text-align: center;
+
+}
+
+
+.simple_form label {
+  float: left;
+  width: 100px;
+  text-align: right;
+  margin: 2px 10px;
+}
+
+.simple_form div.input {
+  margin-bottom: 10px;
+}
+
+.simple_form div.boolean, .simple_form input[type='submit'] {
+  margin-left: 120px;
+}
+
+.simple_form div.boolean label, .simple_form label.collection_radio {
+  float: none;
+  margin: 0;
+}
+
+.simple_form label.collection_radio {
+  margin-right: 10px;
+  margin-left: 2px;
+}
+
+.simple_form .error {
+  clear: left;
+  margin-left: 120px;
+  font-size: 12px;
+  color: #D00;
+  display: block;
+}
+
+.simple_form .hint {
+  clear: left;
+  margin-left: 120px;
+  font-size: 12px;
+  color: #555;
+  display: block;
+  font-style: italic
+}
+
+input#buscar{
+  height: 30px;
+  width:70%;
+  margin-top: 15px;
+}
+
+button#buscar{
+  height: 30px;
+  width:15%;
+  margin-top: 15px;
+}
+li#buscar{
+  
+  margin-top: 15px;
+}
+
+.pretty th .current {
+
+  padding-right: 12px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.pretty th .asc {
+  background-image: url('up_arrow.gif');
+}
+
+.pretty th .desc {
+  background-image: url('down-arrow.gif');
+}
+
+.center {
+  text-align: center; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-bottom: auto; 
+  margin-top: -100px;
+}
+
+#color{
+margin-top: 10px;
+color: #fff;
+}
+a#c{
+color:#fff;
+background:#59b548; 
+margin: 2em 0;
+height: 10px;
+text-align: center;
+padding:10px;
+width:10%;
+}
+a#ce{
+color:#fff;
+background: #238276; 
+margin: 2em 0;
+
+}
+
+a#ver{
+ color:#E8E8E8 ;
+ margin-top: 50px;
+}
+
+div#footer{
+  height: 20px;
+  margin-top: 40px;
+}
+
+p#sena1{
+  color: #fff;
+  margin-left: 53px;
+  margin-top: -30px;
+
+}
+
+p#sena2{
+  color: #fff;
+  margin-left: 310px;
+  margin-top: -25px;
+
+}
+
+#linkto{
+  color: #0d5553;
+}
+
+#image{
+width: 100%;
+margin-top: -20px;
+}
+
+#images1{
+height: 40px;
+width: 150%;
+margin-top: -10px;
+
+}
+
+.well{
+  margin-top: -20px;
+}
+
+#admin1{
+  margin-top: -10px;
+}
+#admin2{
+    margin-top: -40px;
+    
+}
+#admin{
+   margin-top: -47px;
+}
+
+table.jCalendar {
+  border: 1px solid #000;
+  background: #aaa;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+table.jCalendar th {
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+  padding: 3px 5px;
+}
+
+table.jCalendar td {
+  background: #ccc;
+  color: #000;
+  padding: 3px 5px;
+  text-align: center;
+}
+table.jCalendar td.other-month {
+  background: #ddd;
+  color: #aaa;
+}
+table.jCalendar td.today {
+  background: #666;
+  color: #fff;
+}
+table.jCalendar td.selected {
+  background: #f66;
+  color: #fff;
+}
+table.jCalendar td.selected.dp-hover {
+  background: #f33;
+  color: #fff;
+}
+table.jCalendar td.dp-hover,
+table.jCalendar tr.activeWeekHover td {
+  background: #fff;
+  color: #000;
+}
+table.jCalendar tr.selectedWeek td {
+  background: #f66;
+  color: #fff;
+}
+table.jCalendar td.disabled, table.jCalendar td.disabled.dp-hover {
+  background: #bbb;
+  color: #888;
+}
+table.jCalendar td.unselectable,
+table.jCalendar td.unselectable:hover,
+table.jCalendar td.unselectable.dp-hover {
+  background: #bbb;
+  color: #888;
+}
+
+/* For the popup */
+
+/* NOTE - you will probably want to style a.dp-choose-date - see how I did it in demo.css */
+
+div.dp-popup {
+  position: relative;
+  background: #ccc;
+  font-size: 10px;
+  font-family: arial, sans-serif;
+  padding: 2px;
+  width: 171px;
+  line-height: 1.2em;
+}
+div#dp-popup {
+  position: absolute;
+  z-index: 199;
+}
+div.dp-popup h2 {
+  font-size: 12px;
+  text-align: center;
+  margin: 2px 0;
+  padding: 0;
+}
+a#dp-close {
+  font-size: 11px;
+  padding: 4px 0;
+  text-align: center;
+  display: block;
+}
+a#dp-close:hover {
+  text-decoration: underline;
+}
+div.dp-popup a {
+  color: #000;
+  text-decoration: none;
+  padding: 3px 2px 0;
+}
+div.dp-popup div.dp-nav-prev {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  width: 100px;
+}
+div.dp-popup div.dp-nav-prev a {
+  float: left;
+}
+/* Opera needs the rules to be this specific otherwise it doesn't change the cursor back to pointer after you have disabled and re-enabled a link */
+div.dp-popup div.dp-nav-prev a, div.dp-popup div.dp-nav-next a {
+  cursor: pointer;
+}
+div.dp-popup div.dp-nav-prev a.disabled, div.dp-popup div.dp-nav-next a.disabled {
+  cursor: default;
+}
+div.dp-popup div.dp-nav-next {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  width: 100px;
+}
+div.dp-popup div.dp-nav-next a {
+  float: right;
+}
+div.dp-popup a.disabled {
+  cursor: default;
+  color: #aaa;
+}
+div.dp-popup td {
+  cursor: pointer;
+}
+div.dp-popup td.disabled {
+  cursor: default;
+}
+
+#pdf{
+  margin-top: -80px;
+  margin-left: 1100px;
+
+}
+#admi{
+   margin-top: 50px;
+}
+
+th,tr,td.fondo{
+  background: #FFFFFF  ;
+
+}
+h3.fondo{
+  color: #FFFFFF;
+}
+
+h1.fondo{
+font-weight: bold;
+text-decoration: underline;
+  font-size: 50px;
+  font-style: italic;
+  font-family: "Arial";
+  text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+  color: #FFF;
+  text-align: center;
+}
+
+
+input#totalregs{
+  box-shadow: 0 0 5px rgba(252, 115, 35, 1); 
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(252, 115, 35, 1);
+}
+
+
+.imageuser{
+  width: 100px;
+  margin-left: 84px;
+  border-style:solid;
+  border-width:2px;
+  border-color:gray;
+  margin-top: 40px;
+
+}
+
+
+.datos{
+  width: 838px; 
+  height: 316px;
+  border: 10px;
+  margin-left: 200px;
+  margin-top: -240px;
+}
+
+
+  .zoom{
+    transition: 1.5s ease;
+    -moz-transition: 1.5s ease; /* Firefox */
+    -webkit-transition: 1.5s ease; /* Chrome - Safari */
+    -o-transition: 1.5s ease; /* Opera */
+    width: 100px;
+    border-style:solid;
+    border-width:5px;
+    border-color: blue;
+  }
+  .imager{
+    margin-left: -1090px;
+    margin-top: -40px;
+    text-shadow: -10px 20px 15px #000 ;color:black;
+  }
+  .zoom:hover{
+    transform : scale(2);
+    -moz-transform : scale(2); /* Firefox */
+    -webkit-transform : scale(2); /* Chrome - Safari */
+    -o-transform : scale(2); /* Opera */
+    -ms-transform : scale(2); /* IE9 */
+  }
+
+
+
+
+
+
+/*----------------------------
+  Navigation Menu cubo de colores
+-----------------------------*/
+
+
+#colorNav > ul{
+  width: 1080px; /* Increase when adding more menu items */
+  margin:0 auto;
+  margin-left: 15px;
+}
+
+#colorNav > ul > li{ /* will style only the top level li */
+  list-style: none;
+  box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset,1px 1px 1px #CCC;
+  display: inline-block;
+  line-height: 1;
+  margin: 1px;
+  border-radius: 3px;
+  position:relative;
+}
+
+#colorNav > ul > li > a{
+  color:inherit;
+  text-decoration:none !important;
+  font-size:20px;
+  padding: 25px;
+}
+
+#colorNav li ul{
+  position:absolute;
+  list-style:none;
+  text-align:center;
+  width:180px;
+  left:50%;
+  margin-left:-90px;
+  top:70px;
+  font:bold 12px 'Open Sans Condensed', sans-serif;
+  
+  /* This is important for the show/hide CSS animation */
+  max-height:0px;
+  overflow:scroll;
+  
+  -webkit-transition:max-height 0.4s linear;
+  -moz-transition:max-height 0.4s linear;
+  transition:max-height 0.4s linear;
+}
+
+#colorNav li ul li{
+  background-color:#313131;
+}
+
+#colorNav li ul li a{
+  padding:12px;
+  color:#fff !important;
+  text-decoration:none !important;
+  display:block;
+}
+
+#colorNav li ul li:nth-child(odd){
+ /* zebra stripes */
+  background-color:#363636;
+}
+
+#colorNav li ul li:hover{
+  background-color:#444;
+}
+
+#colorNav li ul li:first-child{
+  border-radius:3px 3px 0 0;
+  margin-top:25px;
+  position:relative;
+}
+
+#colorNav li ul li:first-child:before{ /* the pointer tip */
+  content:'';
+  position:absolute;
+  width:1px;
+  height:1px;
+  border:5px solid transparent;
+  border-bottom-color:#313131;
+  left:50%;
+  top:-10px;
+  margin-left:-5px;
+}
+
+#colorNav li ul li:last-child{
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+}
+
+/* This will trigger the CSS */
+/* transition animation on hover */
+
+#colorNav li:hover ul{
+  max-height:200px; /* Increase when adding more dropdown items */
+}
+
+
+/*----------------------------
+  Color Themes
+-----------------------------*/
+
+
+#colorNav li.green{
+  /* This is the color of the menu item */
+  background-color:#00c08b;
+  
+  /* This is the color of the icon */
+  color:#127a5d;
+}
+
+#colorNav li.red{   background-color:#ea5080;color:#aa2a52;}
+#colorNav li.blue{    background-color:#53bfe2;color:#2884a2;}
+#colorNav li.yellow{  background-color:#f8c54d;color:#ab8426;}
+#colorNav li.purple{  background-color:#df6dc2;color:#9f3c85;}
+
+.admin{
+  background: #dddddd url('admin.png') no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+.new{
+  background: #dddddd url('admin2.png') no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+.suggestion{
+  background: #dddddd url('NewUser.png') no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+.show{
+  background: #dddddd url('DatosUsuario.png') no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+.exit{
+  background: #dddddd url('logout.png') no-repeat;
+  width: 70px;
+  height: 70px; 
+}
+
+
+.UserNew{
+  background-color:blue; 
+  /*para Firefox*/
+-moz-border-radius: 5px 5px 5px 5px;
+/*para Safari y Chrome*/
+-webkit-border-radius: 5px 5px 5px 5px;
+/* para Opera */
+border-radius: 5px 5px 5px 5px;
+}
+
+.user{
+  margin-top: -45px;
+  margin-left: 900px;
+  background-color: white;
+  color: black;
+    box-shadow: 2px 2px 5px #999;
+
+}
+
+
+
+#txt{
+    font-family:sans-serif;
+    font-size: 23px;
+    color:green;
+    background-color: black;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    border-width: 10px;
+    border-color: green;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    margin-top: 540px;
+    margin-left: 1010px;
+  -moz-border-radius: 7px;
+   -webkit-border-radius: 7px;
+   
+   box-shadow: 15px -10px 3px #000;
+   -webkit-box-shadow: 10px 6px 8px #2E2E2E;
+   -moz-box-shadow: 15px -10px 3px #000;
+} 
+
+
+
+
+
+
+
+
+
+
+/*!
+ * avgrund 0.1
+ * http://lab.hakim.se/avgrund
+ * MIT licensed
+ *
+ * Created by Hakim El Hattab, http://hakim.se
+ */
+ 
+.avgrund-active body {
+  -webkit-transform: scale( 0.9 );
+     -moz-transform: scale( 0.9 );
+      -ms-transform: scale( 0.9 );
+       -o-transform: scale( 0.9 );
+          transform: scale( 0.9 );
+}
+
+.avgrund-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba( 0, 0, 0, 0.5 );
+}
+  .avgrund-active .avgrund-cover {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.avgrund-contents {
+  margin-left: 1062px;
+  margin-bottom: -50px;
+  width: 140px;
+}
+  .avgrund-active .avgrund-contents {
+    -webkit-filter: blur(2px);
+       -moz-filter: blur(2px);
+        -ms-filter: blur(2px);
+         -o-filter: blur(2px);
+            filter: blur(2px);
+  }
+  .no-blur.avgrund-active .avgrund-contents {
+    -webkit-filter: none;
+       -moz-filter: none;
+        -ms-filter: none;
+         -o-filter: none;
+            filter: none;
+  }
+
+.avgrund-popup {
+  position: absolute;
+  width: 340px;
+  height: 180px;
+  left: 50%;
+  top: 120px;
+  margin: -130px 0 0 -190px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+  padding: 20px;
+
+  background: white;
+  box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.6 );
+  border-radius: 3px;
+
+  -webkit-transform: scale( 0.8 );
+     -moz-transform: scale( 0.8 );
+      -ms-transform: scale( 0.8 );
+       -o-transform: scale( 0.8 );
+          transform: scale( 0.8 );
+}
+  .avgrund-active .avgrund-popup-animate {
+    visibility: visible;
+    opacity: 1;
+
+    -webkit-transform: scale( 1.1 );
+       -moz-transform: scale( 1.1 );
+        -ms-transform: scale( 1.1 );
+         -o-transform: scale( 1.1 );
+            transform: scale( 1.1 );
+  }
+  .avgrund-popup.stack {
+    -webkit-transform: scale( 1.5 );
+       -moz-transform: scale( 1.5 );
+        -ms-transform: scale( 1.5 );
+         -o-transform: scale( 1.5 );
+            transform: scale( 1.5 );
+  }
+  .avgrund-active .avgrund-popup.stack {
+    -webkit-transform: scale( 1.1 );
+       -moz-transform: scale( 1.1 );
+        -ms-transform: scale( 1.1 );
+         -o-transform: scale( 1.1 );
+            transform: scale( 1.1 );
+  }
+
+
+.avgrund-ready body,
+.avgrund-ready .avgrund-contents,
+.avgrund-ready .avgrund-popup,
+.avgrund-ready .avgrund-cover {
+  -webkit-transform-origin: 50% 50%;
+     -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+       -o-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+
+  -webkit-transition: 1s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+     -moz-transition: 1s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+      -ms-transition: 1s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+       -o-transition: 1s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+          transition: 1s all cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+.avgrund-ready .avgrund-popup.no-transition {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a {
+  color: #7aa76d;
+  text-decoration: none;
+
+  -webkit-transition: 0.15s color ease;
+     -moz-transition: 0.15s color ease;
+      -ms-transition: 0.15s color ease;
+       -o-transition: 0.15s color ease;
+          transition: 0.15s color ease;
+}
+  a:hover {
+    color: #91cd85;
+  }
+
+small {
+  display: block;
+  margin-top: 15px;
+  padding-top: 15px;
+  color: #333;
+  font-size: 0.85em;
+  border-top: 1px dashed #ccc;
+
+  -webkit-text-size-adjust: none;
+}
+
+button {
+  border: 0px;
+  padding: 8px 10px;
+  margin: 5px 0px;
+  border-radius: 1px;
+
+  cursor: pointer;
+  color: #fff;
+  background: #FA5858;
+  font-size: 15px;
+
+  -webkit-transition: 0.15s background ease;
+     -moz-transition: 0.15s background ease;
+      -ms-transition: 0.15s background ease;
+       -o-transition: 0.15s background ease;
+          transition: 0.15s background ease;
+}
+  button:hover {
+    background: black;
+  }
+  button:active {
+    background: #60895a;
+  }
+  button+button {
+    margin-left: 5px;
+  }
+
+.sharing {
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

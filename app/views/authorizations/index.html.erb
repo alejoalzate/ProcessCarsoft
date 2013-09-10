@@ -1,0 +1,60 @@
+<div  id='admin2'><%= link_to image_tag("admi.png "), admin2_path, :rel => "tooltip", :title => "Regresar Pagina Administración1"  %></div>
+<%- model_class = Authorization -%>
+<div id='admin1' class="page-header">
+  <h1 class="fondo">Autorización</h1>
+ <div class="navbar">
+    <div class="navbar-inner">
+    <li id='buscar' class="brand" href="#">Buscar</li> 
+      <div class="row">
+        <div class="span6">
+          <form method="GET" class="form-inline" >
+            <input id='buscar' name="buscar" class="search-query" type="text"  placeholder="Buscar" >
+           <a  rel="tooltip" title="Ingresar datos a buscar"><button id='buscar' type="submit" class="btn btn-primary btn-mini"><i class="icon-search icon-white"></i></button></a> 
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<div class="row">
+<div class="span6">
+</div>
+<div class="span10">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Usuarios</th>
+        <th>Elementos1</th>
+         <th>Cantidad1</th>
+        <th>Elementos2</th>
+         <th>Cantidad2</th>
+        <th>Elementos3</th>
+         <th>Cantidad3</th>
+        <th>Elementos4</th>
+        <th>Cantidad4</th>
+        <th>Destino</th>
+        <th>Usabilidad</th>
+        <th>Fechas</th>
+        <th>Acciones</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render @authorizations %>
+    </tbody>
+    <tfoot>
+      <tr>
+       <td><%= link_to image_tag('nuevo.png'),   new_authorization_path,  :remote => true %></td>
+      </tr>
+    </tfoot>
+    <tfoot>
+          <tr>
+              <td><b >Total </b></td>
+            <td>
+                <input type="text"  id="totalregs" class="span1" value="<%= @authorizations.total_entries %>" readonly />
+            </td>
+          </tr>
+      </tfoot>
+  </table>
+</div>

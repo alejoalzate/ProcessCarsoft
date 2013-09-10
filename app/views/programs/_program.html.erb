@@ -1,0 +1,13 @@
+<tr id=<%= "program_#{program.id}" %>>
+    <td><%= link_to program.id, edit_program_path(program), :remote => true %></td>
+    <td><%= program.name %></td>
+    <td><%= program.code %></td>
+     <td><%= program.user.name %></td>
+    <td>
+        <%= link_to  image_tag('mostrar.png'), program, :remote => true, :class => 'btn btn-mini' %>
+        <%= link_to image_tag('editar1.png', :title => "Editar Equipos"), edit_program_path(program),  :remote => true, :class => 'btn btn-mini'%>
+       
+    </td>
+</tr>
+
+

@@ -1,0 +1,13 @@
+<tr id=<%= "team_#{team.id}" %>>
+    <td><%= link_to team.id, edit_user_team_path(@user, team), :remote => true %></td>
+    <td><%= team.name %></td>
+    <td><%= team.serial %></td>
+    <td><%= team.accessory %></td>
+    <td><%= team.color %></td>
+    <td><%= team.type_material.name %></td>
+    <td><%= team.porter.name %></td>
+    <td>
+        <%= link_to  image_tag('mostrar.png'), user_team_path(@user, team),     :remote => true,  :rel => "tooltip", :title => "Mostrar Equipos", :class => 'btn btn-mini' %>
+        <%= link_to image_tag('editar1.png'), edit_user_team_path(@user, team),  :remote => true,  :rel => "tooltip", :title => "Editar Equipos",:class => 'btn btn-mini' %>
+    </td>
+</tr>

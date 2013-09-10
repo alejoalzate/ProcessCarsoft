@@ -1,0 +1,12 @@
+<tr id=<%= "center_#{center.id}" %>>
+    <td></td>
+    <td><%= center.name %></td>
+    <td><%= center.code %></td>
+    <td>
+    <%= link_to image_tag('mostrar.png', :title => "Mostrar Centro"), area_center_center_path(@area_center, center), :remote => true, :class => 'btn btn-mini' %>
+    <%= link_to image_tag('editar1.png', :title => "Editar Centro"), edit_area_center_center_path(@area_center, center), :remote => true,
+        :class => 'btn btn-mini' %>
+  </td>
+</tr>
+  
+        

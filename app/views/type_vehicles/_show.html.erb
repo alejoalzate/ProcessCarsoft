@@ -1,0 +1,23 @@
+<%- model_class = TypeVehicle -%>
+	<div class="page-header">
+  		<h1>Tipo Vehiculos</h1>
+		<table class="table table-bordered table-hover" >
+	    	<caption>
+	    		<h3>Informacion</h3>
+	    	</caption>
+	    	<thead>
+	    		<tr class="success">
+	    			<th>Id</th>
+	    			<th>Nombres</th>
+	    			<th>Descripcion</th>
+	    		</tr>
+	    	</thead>
+	    	<tbody>
+	    		<tr class="warning">
+				    <td><p><%= @type_vehicle.id %></p></td>
+				    <td><p><%= @type_vehicle.name %></p></td>
+				    <td><p><%= @type_vehicle.description %></p></td> 
+	    		</tr>
+	    	</tbody>
+	    </table>
+	</div>

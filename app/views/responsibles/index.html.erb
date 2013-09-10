@@ -1,0 +1,54 @@
+<%- model_class = Responsible -%>
+<div id='admin' class="page-header">
+  <h1 class="fondo">Responsables</h1>
+  <div class="navbar">
+    <div class="navbar-inner">
+    <li id='buscar' class="brand" href="#">Buscar</li> 
+      <div class="row">
+        <div class="span6">
+          <form method="GET" class="form-inline" >
+            <input id='buscar' name="buscar" class="search-query" type="text"  placeholder="Buscar" >
+           <a  rel="tooltip" title="Ingresar datos a buscar"><button id='buscar' type="submit" class="btn btn-primary btn-mini"><i class="icon-search icon-white"></i></button></a> 
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th class="fondo ">id</th>
+      <th class="fondo ">Usuarios</th>
+       <th class="fondo ">Nomnbre</th>
+      <th class="fondo ">Telefono</th>
+      <th class="fondo ">Extension</th>
+      <th class="fondo ">Opciones</th>
+      <th class="fondo "></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @responsibles %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td><%= link_to image_tag('nuevo.png'),  new_responsible_path,  :remote => true %></td>
+    </tr>
+    </tr>
+  </tfoot> 
+  <tfoot>
+          <tr>
+              <td><b>Total Responsables:</b></td>
+            <td>
+                <input type="text"  id="totalregs" class="span1" value="<%= @responsibles.total_entries %>" readonly />
+            </td>
+          </tr>
+      </tfoot> 
+
+</table>
+  <div align="center">
+        <div id="pagination" class="pagination">
+          </ul>
+              <%= will_paginate @responsibles, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente&raquo;' %>
+          </ul>
+        </div>
+      </div>  

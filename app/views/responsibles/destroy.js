@@ -1,0 +1,1 @@
+$("table tr#responsible_<%= @responsible.id %>").remove();

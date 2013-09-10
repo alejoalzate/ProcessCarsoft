@@ -1,0 +1,10 @@
+<tr id=<%= "type_vehicle_#{type_vehicle.id}" %>>
+    <td><%= link_to type_vehicle.id, edit_type_vehicle_path(type_vehicle), :remote => true %></td>
+    <td><%= type_vehicle.name %></td>
+    <td><%= type_vehicle.description%></td>
+    <td>
+        <%= link_to  image_tag('mostrar.png'), type_vehicle,     :remote => true, :class => 'btn btn-mini' %>
+        <%= link_to image_tag('editar1.png', :title => "Editar Equipos"), edit_type_vehicle_path(type_vehicle),  :remote => true,
+          :class => 'btn btn-mini'%>
+    </td>
+</tr>

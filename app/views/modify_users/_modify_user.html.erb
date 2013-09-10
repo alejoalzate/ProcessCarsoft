@@ -1,0 +1,10 @@
+<tr id=<%= "modify_user_#{modify_user.id}" %>>
+    <td><%= link_to modify_user.id, edit_user_modify_user_path(@user, modify_user), :remote => true %></td>
+    <td><%= modify_user.change  %></td>
+    <td><%= modify_user.description %></td>
+    <td>
+        <%= link_to  image_tag('mostrar.png'), user_modify_user_path(@user, modify_user),     :remote => true, :rel => "tooltip", :title => "Mostrar", :class => 'btn btn-mini' %>
+        <%= link_to image_tag('editar1.png'), edit_user_modify_user_path(@user, modify_user),  :remote => true, :rel => "tooltip", :title => "Editar", :class => 'btn btn-mini'%>
+        
+    </td>
+</tr>

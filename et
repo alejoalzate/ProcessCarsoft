@@ -1,0 +1,192 @@
+commit 6b9f493a3016f45424b7b63e709f5d7a9c563b6f
+Author: Alejandro Saldarriaga Alzate <alejoalzate@misena.edu.co>
+Date:   Tue May 28 16:32:43 2013 -0500
+
+    lazybox scaffold and authorization models, area center and responsible
+
+commit 446b8b51630658c4e5f402b7734382a8388d77d6
+Author: Alejandro Saldarriaga Alzate <alejoalzate@misena.edu.co>
+Date:   Sun May 26 18:09:28 2013 -0500
+
+    correction gem
+
+commit 07ab32af2fb7cb881c81584b53ecfb20f960f794
+Author: Alejandro Saldarriaga Alzate <alejoalzate@misena.edu.co>
+Date:   Sun May 26 17:44:55 2013 -0500
+
+    addition of a new gem for better performance of the database
+
+commit b1c2d4aa7373230a1a2ca86438b0eed559ee9bbb
+Author: Alejandro Saldarriaga Alzate <alejoalzate@misena.edu.co>
+Date:   Sun May 26 17:39:23 2013 -0500
+
+    config file preparca seed
+
+commit 40b0243ea059aa3b871d1692fc763cdbc7775f87
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Sun May 26 15:59:51 2013 -0500
+
+    Aggregations in the user module
+    tooltip, icons, view, css
+    Modification of the survey module
+    table was held the following suggestions:
+    scaffols suggestions to bootstrap lesibox
+    lisbox, tooltip to action buttons,
+    view-finder icons, pagination
+    rempazo survey module
+    by uan survey module table does not exist
+
+commit d2def3fbee9160074c07d167413cd82f2c99976a
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Sat May 25 19:48:25 2013 -0500
+
+    modulo de usuario detalle de maestro  de
+    usuario a materiales,equipos, modificaiones usuarios
+    and some changes in light of the tables and css with bootstrap
+    color to the btn with less variables
+
+commit fdf4c9b2e95e66b80320097d836a0cefacfa4367
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Sat May 25 19:30:32 2013 -0500
+
+    modulo de usuario detalle de maestro  de
+    usuario a materiales,equipos, modificaiones usuarios
+    and some changes in light of the tables and css with bootstrap
+    color to the btn with less variables
+
+commit 0f40f891f1f4ecab69202c334d68f3435b8cd3df
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Sat May 25 13:44:47 2013 -0500
+
+    Commit view welcome page
+    diseño con photoshop
+    creacion de pagina static
+    css-bootstrap diseño para
+    la pgina de inicio
+
+commit 480083fa89aac744c995c2f4346244ff97a37a4c
+Author: Alejandro Alzate <alejoalzate@misena.edu.co>
+Date:   Tue May 21 06:15:29 2013 -0500
+
+    end
+
+commit c70aa23043b1fe4728f0e89cfda4ac64177c5963
+Author: Alejandro Saldarriaga Alzate <alejoalzate@misena.edu.co>
+Date:   Mon May 20 22:04:48 2013 -0500
+
+    lisbox-table-sheets
+
+commit af01d7c5ea0c04a8be3d9a55cc7b047106f73ea9
+Author: Alejandro Saldarriaga Alzate <alejoalzate@misena.edu.co>
+Date:   Mon May 20 22:03:13 2013 -0500
+
+    lisbox-table-center_programs
+
+commit 2a893f021d2ae9bc19ac573930828ac46419f5ec
+Author: Alejandro Saldarriaga Alzate <alejoalzate@misena.edu.co>
+Date:   Mon May 20 22:02:15 2013 -0500
+
+    lisbox-table-center
+
+commit a517b15e33ac9de2ea47ef9c80131d4a447796d2
+Merge: 80eca71 d3af300
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Sun May 19 14:55:20 2013 -0500
+
+    Merge branch 'master' of https://github.com/Aplication-Carsoft/aplication-carsoft
+
+commit 80eca71a35841044fe9f1f31a0719b33152d2295
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Sun May 19 14:21:43 2013 -0500
+
+    lisbox-table-user
+
+commit d3af300e3e9ffd038355bacdf1793f1c1efdb5b8
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Sun May 19 14:21:43 2013 -0500
+
+    lisbox-table-user
+
+commit eb5b51cdd3cb0682400819b0ad07d0b08fd86ce9
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Sun May 19 12:27:40 2013 -0500
+
+    master-details-module-users
+
+commit 6e382363e958291db1064b1975babe267aa9dbeb
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Thu May 16 09:33:01 2013 -0500
+
+    modulo parkings
+
+commit 7593f108f050f49e8f0a4ad59d0f1ce0b9972fb5
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Sun May 12 14:36:24 2013 -0500
+
+    searcher-paginations-tables
+
+commit a83f8990e976462204ffcbd75ba2f5e0b3e595df
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Tue May 7 08:44:00 2013 -0500
+
+    lisbox-parte1
+
+commit d803a66cf9ae563bc936be312759fdb8cef79086
+Author: gregory <gregory@gregory-MS-7309.(none)>
+Date:   Tue May 7 06:41:13 2013 -0500
+
+    lexybox-parte2
+
+commit 3a82f6b1e658b8e55140aef3568aab83f66badba
+Author: gregory <gregory@gregory-MS-7309.(none)>
+Date:   Fri May 3 18:27:10 2013 -0500
+
+    lexybox-scaffold-parte1
+
+commit 5031c06a29074861b35ac9c0d2ad994a5231963a
+Author: Alejo alzate <alejoalzate@misena.edu.co>
+Date:   Fri May 3 10:55:56 2013 -0500
+
+    Modificacion del layaut para una mejor navegacion
+
+commit 4f6e6f4e84e888f92d198672f28b1aa6d639a859
+Author: Alejo alzate <alejoalzate@misena.edu.co>
+Date:   Fri May 3 10:48:27 2013 -0500
+
+    Modificacion del arhivo de rutas routes.rb
+
+commit 7806d58bb520bdd9d418e05290587c7ec3963d8c
+Author: Alejo alzate <alejoalzate@misena.edu.co>
+Date:   Fri May 3 10:45:58 2013 -0500
+
+    Generacion de un controller para las paginas estaticas
+
+commit c1fd54036fe7e0d9d7c272f641f914eca45012e4
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Fri May 3 09:38:24 2013 -0500
+
+    migracion-campo-references
+
+commit b497938ba1a775d8e9513ae5224334dfbabfd6c3
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Fri May 3 08:13:40 2013 -0500
+
+    migracion-campo-references
+
+commit 5c7177b177ee5165f2278905c6be1abe270ce92c
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Thu May 2 10:51:49 2013 -0500
+
+    scaffold con bootstrap
+
+commit 1d5bac3bf987701b1c1b433f4c3ea7b94cc91e6b
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Thu May 2 08:43:39 2013 -0500
+
+    base de datos postgres
+
+commit 4bed4c0446ee660129169a9c2281189a5b55d125
+Author: gregory1308 <gregory1308@misena.edu.co>
+Date:   Mon Apr 29 08:30:36 2013 -0500
+
+    proyecto-carsoft

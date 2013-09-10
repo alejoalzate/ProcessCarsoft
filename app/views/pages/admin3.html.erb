@@ -1,0 +1,37 @@
+<div class="imager"><ul><u><h3><%= current_user.name %></h3></u><ul></div>
+<br><br><br><br>
+<li><%= image_tag current_user.avatar.url(:thumb), :class => "img-polaroid zoom" %></li>
+
+
+<table class="datos">
+<tr> 
+        <th><h4><u>Vehiculo(s)</u></h4></th>
+        <th><h4><u>Equipo(s)</u></h4></th>
+        <th><h4><u>Elemento(s)</u></h4></th>
+</tr>
+<tr>
+        <td><li><%= current_user.vehicle.name %></li></td>
+        <td><li><%= current_user.team.name %></li></td>
+        <td><li><%= current_user.material.name %></li></td>
+</tr>
+<tr>
+        <td><li><%= current_user.vehicle.name %></li></td>
+        <td><li><%= current_user.team.name %></li></td>
+        <td><li><%= current_user.material.name %></li></td>
+</tr>
+<tr>
+        <td><li><%= current_user.vehicle %></li></td>
+        <td><li><%= current_user.team %></li></td>
+        <td><li><%= current_user.material %></li></td>
+</tr>
+<tr>
+        <td><li><%= current_user.vehicle %></li></td>
+        <td><li><%= current_user.team %></li></td>
+        <td><li><%= current_user.material %></li></td>
+</tr>
+<tr>
+        <td><li><%= current_user.vehicle %></li></td>
+        <td><li><%= current_user.team %></li></td>
+        <td><li><%= current_user.material %></li></td>
+</tr>
+</table>

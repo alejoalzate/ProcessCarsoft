@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  type_team: false
+  name: MyString
+  serial: MyString
+  mouse: false
+  charger: false
+  color: MyString
+  porter: 
+  user: 
+
+two:
+  type_team: false
+  name: MyString
+  serial: MyString
+  mouse: false
+  charger: false
+  color: MyString
+  porter: 
+  user: 

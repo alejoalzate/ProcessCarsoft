@@ -1,0 +1,11 @@
+<tr id=<%= "center_program_#{center_program.id}" %>>
+    <td><%= link_to center_program.id, edit_center_program_path(center_program), :remote => true %></td>
+    <td><%= center_program.center_id  %></td>
+    <td><%= center_program.program_id%></td>
+    <td><%= center_program.user_id %></td>
+    <td>
+        <%= link_to  image_tag('mostrar.png'), center_program,     :remote => true, :class => 'btn btn-mini' %>
+        <%= link_to image_tag('editar1.png', :title => "Editar Equipos"), edit_center_program_path(center_program.id),  :remote => true,
+          :class => 'btn btn-mini'%>
+    </td>
+</tr>

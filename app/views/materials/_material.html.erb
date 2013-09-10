@@ -1,0 +1,12 @@
+<tr id=<%= "material_#{material.id}" %>>
+    <td><%= link_to material.id, edit_user_material_path(@user, material), :remote => true %></td>
+    <td><%= material.name %></td>
+    <td><%= material.type_material.name  %></td>
+    <td><%= material.user.name %></td>
+    <td><%= material.description %></td>
+     <td>
+        <%= link_to  image_tag('mostrar.png'), user_material_path(@user, material),     :remote => true,  :rel => "tooltip", :title => "Mostrar", :class => 'btn btn-mini' %>
+        <%= link_to image_tag('editar1.png'), edit_user_material_path(@user, material),  :remote => true,  :rel => "tooltip", :title => "Editar", :class => 'btn btn-mini'%>
+        
+    </td>
+</tr>

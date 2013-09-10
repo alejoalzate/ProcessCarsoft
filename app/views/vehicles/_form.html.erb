@@ -1,0 +1,19 @@
+<%= simple_form_for([@user, @vehicle], :html => { :class => 'form-horizontal' },
+ :remote => true) do |f| %>
+
+    <%= f.error_notification %>
+    <%= display_base_errors  @vehicle %>
+
+    <p><%= f.input :plate, :label => "Placa",  :required => true   %></p>
+    <p><%= f.input :color, :label => "Color",  :required => true   %></p>
+    <p><%= f.input :brand, :label => "Marca",  :required => true   %></p>
+    <p><%= f.input :model, :label => "Modelo",  :required => true   %></p>
+    
+    <p><%= f.label :type_vehicle_id, :label => "Tipo Vehiculo",  :required => true   %>
+    	<%= f.collection_select :type_vehicle_id, TypeVehicle.all, :id, :name, :prompt => "Seleccion Tipo Vehiculos" %></p>
+    	    	
+    <div class="form-actions">
+      <%= f.submit "guardar", :class => 'btn btn-primary' %>
+      <a href="#" class="btn" onclick="$.lazybox.close()">Cerrar</a>
+    </div>
+<% end %>

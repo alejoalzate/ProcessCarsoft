@@ -1,0 +1,62 @@
+<div  id='admin2'><%= link_to image_tag("admi.png "), "pages/admin", :rel => "tooltip", :title => "Regresar Pagina Administración1"  %></div>
+<%- model_class = Suggestion -%>
+  <div id="admin1"class="page-header">
+    <h1 class="fondo" >Sugerencias</h1>
+     <div class="navbar">
+    <div class="navbar-inner">
+    <li id='buscar' class="brand" href="#">Buscar</li> 
+      <div class="row">
+        <div class="span6">
+          <form method="GET" class="form-inline" >
+            <input id='buscar' name="buscar" class="search-query" type="text"  placeholder="Buscar" >
+             <a  rel="tooltip" title="Ingresar datos dar Click"><button id='buscar' type="submit" class="btn btn-primary"><i class="icon-search icon-white"></i></button></a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div id="pdf"> <%= link_to  image_tag('pdf.png', :tile  => "Imprimir Registros"), suggestions_path(:format => :pdf) %>
+  </div >
+  </div>
+   
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Nombres</th>
+          <th>Apellidos</th>
+          <th>Tipo Documentos</th>
+          <th>Numero identidad</th>
+          <th>Telefonos</th>
+          <th>Celulares</th>
+          <th>Sugerencias</th>
+           <th></th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+       <%= render @suggestions %>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td><%= link_to image_tag('nuevo.png',),  new_suggestion_path,  :remote => true, :rel => "tooltip", :title => "Ingresar Sugerencias", :class => "btn btn-mini " %></td>
+        </tr>
+      </tfoot>
+       <tfoot>
+          <tr>
+              <td><b >Total Sugerencias</b></td>
+            <td>
+                <input type="text"  id="totalregs" class="span1" value="<%= @suggestions.total_entries %>" readonly />
+            </td>
+          </tr>
+      </tfoot>
+    </table>
+  </div>
+    </table>
+      <div align="center">
+        <div id="pagination" class="pagination">
+          </ul>
+              <%= will_paginate @suggestions, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente&raquo;' %>
+          </ul>
+        </div>
+      </div>

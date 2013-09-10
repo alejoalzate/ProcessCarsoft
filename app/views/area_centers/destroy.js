@@ -1,0 +1,1 @@
+$("table tr#area_center_<%= @area_center.id %>").remove();

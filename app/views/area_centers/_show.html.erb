@@ -1,0 +1,29 @@
+<%- model_class = AreaCenter -%>
+	<div class="page-header">
+  		<h1>Area Centro</h1>
+		<table class="table table-bordered table-hover" >
+	    	<caption>
+	    		<h3>Informacion</h3>
+	    	</caption>
+	    	<thead>
+	    		<tr class="success">
+	    			<th>Id</th>
+	    			<th>Nombres</th>
+	    			<th>Extension</th>
+	    			<th>Responsable</th>
+	    			<th>Telefono</th>
+	    			<th>Especificacion</th>
+	    		</tr>
+	    	</thead>
+	    	<tbody>
+	    		<tr class="warning">
+				    <td><p><%= @area_center.id %></p></td>
+				    <td><p><%= @area_center.name %></p></td>
+				    <td><p><%= @area_center.extension %></p></td>
+				    <td><p><%= @area_center.responsible.name %></p></td>   
+				    <td><p><%= @area_center.phone %></p></td>
+				    <td><p><%= @area_center.specification %></p></td>
+	    		</tr>
+	    	</tbody>
+	    </table>
+	</div>

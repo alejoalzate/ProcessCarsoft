@@ -1,0 +1,11 @@
+<tr id=<%= "type_user_#{type_user.id}" %>>
+    <td><%= link_to type_user.id, edit_type_user_path(type_user), :remote => true %></td>
+    <td><%= type_user.name %></td>
+    <td><%= type_user.acronym %></td>
+    <td><%= type_user.description %></td>
+    <td>
+        <%= link_to  image_tag('mostrar.png'), type_user,     :remote => true, :class => 'btn btn-mini' %>
+        <%= link_to image_tag('editar1.png', :title => "Editar Equipos"), edit_type_user_path(type_user),  :remote => true,
+          :class => 'btn btn-mini'%>
+    </td>
+</tr>

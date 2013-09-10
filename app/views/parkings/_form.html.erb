@@ -1,0 +1,19 @@
+<%= simple_form_for(@parking, :html => { :class => 'form-horizontal' }, :remote => true) do |f| %>
+    <%= f.error_notification %>
+    <%= display_base_errors @parking %>
+
+    <p><%= f.input :space_avaible, :label => "Espacio disponibles",  :required => true   %></p>
+    <p><%= f.input :location, :label => "Ubicaciones",  :required => true   %></p>
+    <p><%= f.label :area_id, :label => "Zonas",  :required => true   %>
+      <%= f.collection_select :area_id, Area.all, :id, :name, :prompt => "Seleccion Zonas" %></p>
+    <p><%= f.label :vehicle_id, :label => "Vehiculos",  :required => true   %>
+      <%= f.collection_select :vehicle_id, Vehicle.all, :id, :plate, :prompt => "Seleccion Vehicles" %></p>
+    <p><%= f.input :description, :label => "Descripcion",  :required => true   %></p>
+
+
+    
+    <div class="form-actions">
+      <%= f.submit "guardar", :class => 'btn btn-primary' %>
+      <a href="#" class="btn" onclick="$.lazybox.close()">Cerrar</a>
+    </div>
+<% end %>

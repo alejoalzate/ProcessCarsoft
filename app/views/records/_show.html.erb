@@ -1,0 +1,44 @@
+<%- model_class = Record -%>
+	<div class="page-header">
+  		<h1>Registros</h1>
+		<table class="table table-bordered table-hover" >
+	    	<caption>
+	    		<h3>Informacion</h3>
+	    	</caption>
+	    	<thead>
+	    		<tr class="success">
+	    			<th>Id</th>
+	    			<th>Fecha</th>
+	    			<th>Hora</th>
+	    			<th>Cantidad</th>
+	    			<th>Movimientos</th>
+	    			<th>Destino</th>
+	    			<th>procedencia</th>
+	    			<th>Centros</th>
+	    			<th>Vehiculos</th>
+	    			<th>Porteros</th>
+	    			<th>Materiales</th>
+	    			<th>Usuarios</th>
+	    			<th>Equipos</th>
+	    		</tr>
+	    	</thead>
+	    	<tbody>
+	    		<tr class="success">
+				    <td><p><%= @record.id %></p></td>
+				    <td><p><%= @record.date %></p></td>
+				    <td><p><%= @record.time  %></p></td>
+				    <td><p><%= @record.amount %></p></td>
+				    <td><p><%= @record.movements  %></p></td>	
+				   	<td><p><%= @record.destination %></p></td>
+				   	<td><p><%= @record.provenance %></p></td>
+				    <td><p><%= @record.center_id %></p></td>
+				    <td><p><%= @record.vehicle_id  %></p></td>
+				    <td><p><%= @record.porter_id %></p></td>
+				    <td><p><%= @record.material_id  %></p></td>	
+				   	<td><p><%= @record.user_id  %></p></td>
+				   	<td><p><%= @record.team_id  %></p></td>
+
+	    		</tr>
+	    	</tbody>
+	    </table>
+	</div>

@@ -1,0 +1,11 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: carsoft_development
+  pool: 5
+  username: postgres
+  password: 
+  host: localhost
+  port: 5432
+
+

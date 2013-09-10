@@ -1,0 +1,12 @@
+<tr class="fondo " id=<%= "responsible_#{responsible.id}" %>>
+  <td><%= responsible.id %></td>
+  <td><%= responsible.user.id %></td>
+  <td><%= responsible.name %></td> 
+  <td><%= responsible.phone %></td>
+  <td><%= responsible.extension %></td> 
+  <td>
+  <%= link_to  image_tag('mostrar.png'), responsible,     :remote => true, :class => 'btn btn-mini' %>
+    <%= link_to image_tag('editar1.png', :title => "Editar Equipos"), edit_responsible_path(responsible),  :remote => true,:class => 'btn btn-mini'%>
+    <td><%= link_to image_tag('area_center.png', :tile => "Agregar Miembros"), responsible_area_centers_path(responsible) %></td>
+  </td>
+</tr>

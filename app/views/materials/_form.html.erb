@@ -1,0 +1,17 @@
+<%= simple_form_for([@user, @material], :html => { :class => 'form-horizontal' },
+ :remote => true) do |f| %>
+    <%= f.error_notification %>
+    <%= display_base_errors @material %>
+
+    <p><%= f.input :name, :label => "Nombre",  :required => true  %></p>
+
+     <p><%= f.label :type_material_id, :label => "Material",  :required => true   %>
+        <%= f.collection_select :type_material_id, TypeMaterial.all, :id, :name, :prompt => "Tipo Material"  %></p>
+  
+    <p><%= f.input :description %></p>
+
+    <div class="form-actions">
+      <%= f.submit "guardar", :class => 'btn btn-primary' %>
+       <a href="#" class="btn" onclick="$.lazybox.close()">Cerrar</a>
+    </div>
+<% end %>

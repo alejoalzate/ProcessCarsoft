@@ -1,0 +1,13 @@
+<tr id=<%= "parking_#{parking.id}" %>>
+    <td><%= link_to parking.id, edit_parking_path(parking), :remote => true %></td>
+    <td><%= parking.space_avaible %></td>
+    <td><%= parking.location  %></td>
+    <td><%= parking.area.name %></td>
+    <td><%= parking.vehicle.plate  %></td>
+    <td><%= parking.description   %></td>
+    <td>
+        <%= link_to  image_tag('mostrar.png'), parking,     :remote => true, :class => 'btn btn-mini' %>
+        <%= link_to image_tag('editar1.png', :title => "Editar Equipos"), edit_parking_path(parking),  :remote => true,
+          :class => 'btn btn-mini'%>
+    </td>
+</tr>

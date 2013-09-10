@@ -1,0 +1,58 @@
+<%- model_class = Vehicle -%>
+  <div class="page-header">
+    <h1 class="fondo">Vehiculos</h1>
+    <div class="navbar">
+    <div class="navbar-inner">
+    <li id='buscar' class="brand" href="#">Buscar</li> 
+      <div class="row">
+        <div class="span6">
+          <form method="GET" class="form-inline" >
+            <input id='buscar' name="buscar" class="search-query" type="text"  placeholder="Buscar" >
+            <a  rel="tooltip" title="Ingresar datos a buscar"><button id='buscar' type="submit" class="btn btn-primary"><i class="icon-search icon-white"></i></button></a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+   
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th class="fondo">Id</th>
+          <th class="fondo">Placa</th>
+          <th class="fondo">color</th>
+          <th class="fondo">Marca</th>
+          <th class="fondo">Modelo</th>
+          <th class="fondo">Tipo vehiculo</th>
+          <th class="fondo">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+       <%= render @vehicles %>
+      </tbody>
+      <tfoot>
+        <tr>
+           <td><%= link_to image_tag('nuevo.png'), new_user_vehicle_path, :remote => true, :class => 'btn btn-mini', :rel => "tooltip", :title => "Igresar Vehiculos" %> </td>
+              <td><%= link_to image_tag("atras.png"), users_path, :class => 'btn btn-mini', :rel => "tooltip", :title => "Regresar a Usuarios" %></td>
+        </tr>
+      </tfoot>
+       <tfoot>
+          <tr>
+              <td><b >Total Vehiculos:</b></td>
+            <td>
+                <input type="text"  id="totalregs" class="span1" value="<%= @vehicles.total_entries %>" readonly />
+            </td>
+          </tr>
+      </tfoot>
+    </table>
+  </div>
+    </table>
+      <div align="center">
+        <div id="pagination" class="pagination">
+          </ul>
+              <%= will_paginate @vehicles, :previous_label => '&laquo; Anterior', :next_label => 'Siguiente&raquo;' %>
+          </ul>
+        </div>
+      </div>
+

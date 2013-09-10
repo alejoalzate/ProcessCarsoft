@@ -1,0 +1,16 @@
+<%= simple_form_for(@responsible, :html => { :class => 'form-horizontal' }, :remote => true)  do |f| %>
+
+  <%= f.error_notification %>
+  <%= display_base_errors @responsible %>
+
+  <p><%= f.label :user_id, :label => "Usuario",  :required => true %>
+  <%= f.collection_select :user_id , User.all, :id, :name, :prompt => "Usuarios"  %></p>
+  <p><%= f.input :name %></p>
+  <p><%= f.input :phone %></p>
+  <p><%= f.input :extension, :label => "Extension",  :required => true %></p>
+  
+  <div class="form-actions">
+    <%= f.submit "guardar", :class => 'btn btn-primary' %>
+    <a href="#" class="btn" onclick="$.lazybox.close()">Cerrar</a>
+  </div>
+<% end %>
